@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+// group 6
+
 void get_triangle_input() {
 }
 
