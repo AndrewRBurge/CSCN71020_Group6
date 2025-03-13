@@ -4,7 +4,7 @@
 //PROG71990-Group6project-w2025-BasilVavasis
 
 //function for first feature to determine whether inputs make a trangle and if so what kind
-void triCalc() {
+void get_triangle_input() {
     //initializing the variables for the side lengths
     float sideLength1 = 0;
     float sideLength2 = 0;
