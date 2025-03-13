@@ -4,7 +4,7 @@
 //PROG71990-Group6project-w2025-BasilVavasis
 
 //function for first feature to determine whether inputs make a trangle and if so what kind
-int triCalc(s) {
+void triCalc() {
     //initializing the variables for the side lengths
     float sideLength1 = 0;
     float sideLength2 = 0;
@@ -26,12 +26,15 @@ int triCalc(s) {
 	//Another if statement to see what type of triangle the user has inputted
 	if (sideLength1 == sideLength2 && sideLength2 == sideLength3) {
 		printf("This is an equilateral triangle\n");
+		return;
 	}
 	else if (sideLength1 == sideLength2 || sideLength2 == sideLength3 || sideLength1 == sideLength3) {
 		printf("This is an isosceles triangle\n");
+		return;
 	}
 	else {
 		printf("This is a scalene triangle\n");
+		return;
 	}
 
 
