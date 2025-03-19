@@ -1,2 +1,6 @@
 ﻿  source.c
-  Group Project.vcxproj -> C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\x64\Debug\Group Project.exe
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(18,9): warning C4101: 'p': unreferenced local variable
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(19,9): warning C4101: 'area': unreferenced local variable
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(50,13): warning C4101: 'rectFound': unreferenced local variable
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(56,1): error C4789: in function 'get_rectangle_input' buffer 'RectY' of size 16 bytes will be overrun; 4 bytes will be written starting at offset 16
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(55,1): error C4789: in function 'get_rectangle_input' buffer 'RectX' of size 16 bytes will be overrun; 4 bytes will be written starting at offset 16
