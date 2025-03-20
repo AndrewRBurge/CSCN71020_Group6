@@ -12,8 +12,13 @@ void get_rectangle_input() {
     int arrY[4];  
     int RectX[4];
     int RectY[4];
-    int length;
-    int length2;
+    float length;
+    float length2;
+   // float x1;
+   // float x2;
+    //float x3;
+   // float x4;
+
     int width;
     int p;
     int area;
@@ -40,7 +45,7 @@ void get_rectangle_input() {
     // check if this shape is rectangle
     // take the distance of each line and use them to determine if they have 4 90^0 angles
     
-    
+    /*
     RectX[1] = arrX[1];
     RectY[1] = arrY[1];
     //point1 is arrX[1] and arrY[1]
@@ -79,42 +84,56 @@ void get_rectangle_input() {
     
     }
 
-     length = RectX[1] - RectX[2];
-    
-     length2 = RectX[4] - RectX[3];
-
-    if (length == length2){
-
-        rectangle = 1;
-    
-    }
+   
     
 
     //calculate length and width
     length = RectX[1] - RectX[2];
     width = RectY[1] - RectY[4];
+    */
 
+     
+    float x1 = arrX[0];
+    float x2 = arrX[1];
+    float x3 = arrX[2];
+    float x4 = arrX[3];
+
+    //calculate length and width
+   // length = arrX[1] - arrX[2];
+
+    length = x1 - x2;
+
+    length2 = x4 - x3;
+
+    if (length == length2) {
+
+        rectangle = 1;
+
+    }
+    int Y1 = arrY[1];
+    int Y4 = arrY[3];
+
+
+    width = Y1 - Y4;
 
      //output parmanitor 
-   // p = length + width * 2;
-   // printf("p = %d", p);
+    p = length + width * 2;
+    printf("p = %d\n", p);
 
     //double check if its rectangle
     if (rectangle == 1) {
        
         //output area
-       // area = length * width;
-       // printf("is rectangle");
+       area = length * width;
+       printf("is rectangle\n");
+       printf("area is %d\n", area);
 
     }
     else {
         rectangle = 0;
-        //printf("is not a rectangle");
+        printf("is not a rectangle\n");
     }
-   
-    //test calcualtions
-   // printf("%d", area);
-    
+      
 
 
 }
