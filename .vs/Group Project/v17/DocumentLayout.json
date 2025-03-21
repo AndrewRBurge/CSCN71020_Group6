@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andre\\AppData\\Local\\Temp\\79ba0f86-7c4c-48fc-b063-da952f1290bd_SampleUnitTest (1).zip.0bd\\SampleUnitTest\\REQ_001\\REQ_001.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C9A4EE-45B8-4E4F-8D1C-AC5F89614A5F}|..\\UnitTest1\\UnitTest1.vcxproj|C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\UnitTest1\\UnitTest1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|solutionrelative:source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +25,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "REQ_001.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\AppData\\Local\\Temp\\79ba0f86-7c4c-48fc-b063-da952f1290bd_SampleUnitTest (1).zip.0bd\\SampleUnitTest\\REQ_001\\REQ_001.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\andre\\AppData\\Local\\Temp\\79ba0f86-7c4c-48fc-b063-da952f1290bd_SampleUnitTest (1).zip.0bd\\SampleUnitTest\\REQ_001\\REQ_001.cpp",
+              "ToolTip": "C:\\Users\\andre\\AppData\\Local\\Temp\\79ba0f86-7c4c-48fc-b063-da952f1290bd_SampleUnitTest (1).zip.0bd\\SampleUnitTest\\REQ_001\\REQ_001.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\andre\\AppData\\Local\\Temp\\79ba0f86-7c4c-48fc-b063-da952f1290bd_SampleUnitTest (1).zip.0bd\\SampleUnitTest\\REQ_001\\REQ_001.cpp [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T18:31:38.117Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cpp",
+              "DocumentMoniker": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\UnitTest1\\UnitTest1.cpp",
+              "RelativeDocumentMoniker": "..\\UnitTest1\\UnitTest1.cpp",
+              "ToolTip": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\UnitTest1\\UnitTest1.cpp",
+              "RelativeToolTip": "..\\UnitTest1\\UnitTest1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T17:57:42.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "source.c",
               "DocumentMoniker": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c",
               "RelativeDocumentMoniker": "source.c",
               "ToolTip": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c",
               "RelativeToolTip": "source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-06T20:14:32.375Z",
               "EditorCaption": ""

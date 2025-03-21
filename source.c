@@ -92,7 +92,7 @@ void get_rectangle_input() {
     width = RectY[1] - RectY[4];
     */
 
-     
+     //store needed points
     float x1 = arrX[0];
     float x2 = arrX[1];
     float x3 = arrX[2];
@@ -101,19 +101,23 @@ void get_rectangle_input() {
     //calculate length and width
    // length = arrX[1] - arrX[2];
 
+
+   // calculate length
     length = x1 - x2;
 
     length2 = x4 - x3;
 
+
+    //confirm if its a rectangle
     if (length == length2) {
 
         rectangle = 1;
 
     }
+
+    //calaculate width
     int Y1 = arrY[1];
     int Y4 = arrY[3];
-
-
     width = Y1 - Y4;
 
      //output parmanitor 
