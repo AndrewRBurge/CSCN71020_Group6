@@ -1,2 +1,9 @@
 ﻿  source.c
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(74,14): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(75,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(127,37): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(127,37): warning C4024: 'get_rectangle_input': different types for formal and actual parameter 1
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(127,46): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(127,46): warning C4024: 'get_rectangle_input': different types for formal and actual parameter 2
+C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\source.c(92,1): warning C4716: 'get_rectangle_input': must return a value
   Group Project.vcxproj -> C:\ConProgramming\Gitpractice\CSCN71020_A1-main\CSCN71020_Group6\x64\Debug\Group Project.exe

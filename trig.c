@@ -1,9 +1,12 @@
-#include math.io
+//#include math.io
+#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
 //PROG71990-Group6project-w2025-BasilVavasis
 
 //function for first feature to determine whether inputs make a trangle and if so what kind
+
+/*
 void get_triangle_input() {
 	//initializing the variables for the side lengths
 	float sideLength1 = 0;
@@ -17,7 +20,7 @@ void get_triangle_input() {
 	//if statement to determine if the inputs make a real triangle
 	//the logic is that if on side is greater than the sum of the other two it cannot be a triangle
 	if (sideLength1 + sideLength2 > sideLength3 && sideLength1 + sideLength3 > sideLength2 && sideLength2 + sideLength3 > sideLength1) {
-		break;
+		return;
 	}
 	else {
 		printf("This is not a triangle\n");
@@ -41,3 +44,10 @@ void get_triangle_input() {
 
 
 }
+
+
+
+
+
+*/
+

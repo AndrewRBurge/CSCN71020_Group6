@@ -1,146 +1,94 @@
+#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
 
 // group 6
 
-void get_triangle_input() {
-}
 
-void get_rectangle_input() {
+//PROG71990-Group6project-w2025-BasilVavasis
 
-    //set up values
-    int arrX[4];
-    int arrY[4];
-    int RectX[4];
-    int RectY[4];
-    float length;
-    float length2;
-    // float x1;
-    // float x2;
-     //float x3;
-    // float x4;
-
-    int width;
-    int p;
-    int area;
-    int rectangle = 1;
-
-    //request input
-    //printf("please input value\n");
-    //int numsymbols = scanf("%d %d", &length, &width);
-   // int numsymbols = scanf("%d", ;
-    printf("1-----2\n|     |\n|     |\n|     |\n4-----3\n   \n");
-
-    for (int i = 0; i < 4; i++) {
-        int counter = i + 1;
-        printf("please input point %d \"x y\" below:\n", counter);
-        int numsymbols = scanf("%d %d", &arrX[i], &arrY[i]);
-    }
-
-    for (int i = 0; i < 4; i++) {
-        int counter = i + 1;
-        printf("point %d is X: %d y: %d\n", counter, arrX[i], arrY[i]);
-
-    }
-
-    // check if this shape is rectangle
-    // take the distance of each line and use them to determine if they have 4 90^0 angles
-
-    /*
-    RectX[1] = arrX[1];
-    RectY[1] = arrY[1];
-    //point1 is arrX[1] and arrY[1]
-
-    for(int i = 2; i < 4; i++){
-
-        int rectFound;
-        int D4 = 0;
-        int D2 = 0;
-        int D3 = 0;
-        if (arrX[1] == arrX[i]) {
-            RectX[4] = arrX[i];
-            RectY[4] = arrY[i];
-            D4 = D4 + 1;
+//function for first feature to determine whether inputs make a trangle and if so what kind
+int get_triangle_input(float sideLength1, float sideLength2, float sideLength3) {
+   
+    //if statement to determine if the inputs make a real triangle
+    //the logic is that if on side is greater than the sum of the other two it cannot be a triangle
+    if (sideLength1 + sideLength2 > sideLength3 && sideLength1 + sideLength3 > sideLength2 && sideLength2 + sideLength3 > sideLength1) {
+        
+        //Another if statement to see what type of triangle the user has inputted
+        if (sideLength1 == sideLength2 && sideLength2 == sideLength3) {
+            printf("This is an equilateral triangle\n");
+            return 1;
         }
-
-        if (arrY[1] == arrY[i]) {
-            RectY[2] = arrY[i];
-            RectX[2] = arrX[i];
-            D2 = D2 + 1;
-
+        else if (sideLength1 == sideLength2 || sideLength2 == sideLength3 || sideLength1 == sideLength3) {
+            printf("This is an isosceles triangle\n");
+            return 2;
         }
-
-        if (arrX[1] != arrX[i] && arrY[1] != arrY[i]) {
-            RectX[3] = arrX[i];
-            RectY[3] = arrY[i];
-            D3 = D3 + 1;
+        else {
+            printf("This is a scalene triangle\n");
+            return 3;
         }
-
-
-        if (D4 + D2 + D3 != 3) {
-            rectangle = 0;
-
-        }
-
-
-    }
-
-
-
-
-    //calculate length and width
-    length = RectX[1] - RectX[2];
-    width = RectY[1] - RectY[4];
-    */
-
-    //store needed points
-    float x1 = arrX[0];
-    float x2 = arrX[1];
-    float x3 = arrX[2];
-    float x4 = arrX[3];
-
-    //calculate length and width
-   // length = arrX[1] - arrX[2];
-
-
-   // calculate length
-    length = x1 - x2;
-
-    length2 = x4 - x3;
-
-
-    //confirm if its a rectangle
-    if (length == length2) {
-
-        rectangle = 1;
-
-    }
-
-    //calaculate width
-    int Y1 = arrY[1];
-    int Y4 = arrY[3];
-    width = Y1 - Y4;
-
-    //output parmanitor 
-    p = length + width * 2;
-    printf("p = %d\n", p);
-
-    //double check if its rectangle
-    if (rectangle == 1) {
-
-        //output area
-        area = length * width;
-        printf("is rectangle\n");
-        printf("area is %d\n", area);
 
     }
     else {
-        rectangle = 0;
-        printf("is not a rectangle\n");
+        printf("This is not a triangle\n");
+        return 0;
+    }
+ 
+
+}
+
+bool get_rectangle_input(int arrX[], int arrY[]) {
+
+
+    float length;
+    float width;
+    float area;
+    float perimeter;
+    bool isRectangle = false;
+
+    // Calculate vector components for each side
+    int dx1 = arrX[1] - arrX[0];  // side 1-2
+    int dy1 = arrY[1] - arrY[0];
+
+    int dx2 = arrX[2] - arrX[1];  // side 2-3
+    int dy2 = arrY[2] - arrY[1];
+
+    int dx3 = arrX[3] - arrX[2];  // side 3-4
+    int dy3 = arrY[3] - arrY[2];
+
+    int dx4 = arrX[0] - arrX[3];  // side 4-1
+    int dy4 = arrY[0] - arrY[3];
+
+    // Check all four angles using dot product
+    int dot1 = dx1 * dx2 + dy1 * dy2;
+    int dot2 = dx2 * dx3 + dy2 * dy3;
+    int dot3 = dx3 * dx4 + dy3 * dy4;
+    int dot4 = dx4 * dx1 + dy4 * dy1;
+
+    if (dot1 == 0 && dot2 == 0 && dot3 == 0 && dot4 == 0) {
+        isRectangle = true;
     }
 
+    // Calculate side lengths using distance formula
+    length = sqrt(dx1 * dx1 + dy1 * dy1);
+    width = sqrt(dx2 * dx2 + dy2 * dy2);
 
+    perimeter = 2 * (length + width);
+    area = length * width;
+    printf("Perimeter: %.2f\n", perimeter);
 
+    printf("\n--- Results ---\n");
+    if (isRectangle) {
+        printf("It is a rectangle.\n");
+        printf("Length: %.2f\n", length);
+        printf("Width : %.2f\n", width);
+     
+        printf("Area     : %.2f\n", area);
+    }
+    else {
+        printf("The shape is NOT a rectangle.\n");
+    }
 }
 
 int main() {
@@ -150,10 +98,33 @@ int main() {
         printf("Enter your choice: ");
         scanf_s("%d", &choice);
         if (choice == 1) {
-            get_triangle_input();
+            //initializing the variables for the side lengths
+            float sideLength1 = 0;
+            float sideLength2 = 0;
+            float sideLength3 = 0;
+            //take the scans from the user to determine the side lengths
+            printf("\n input three triangle side lengths below as any number\n");
+            scanf("%f", &sideLength1);
+            scanf("%f", &sideLength2);
+            scanf("%f", &sideLength3);
+
+
+            get_triangle_input(sideLength1,sideLength2,sideLength3);
         }
         else if (choice == 2) {
-            get_rectangle_input();
+            int arrX[4];
+            int arrY[4];
+            
+
+            printf("Enter coordinates for 4 points in order: \n");
+            printf("1-----2\n|     |\n|     |\n|     |\n4-----3\n\n");
+
+            for (int i = 0; i < 4; i++) {
+                printf("Please input point %d (x y): ", i + 1);
+                scanf("%d %d", &arrX[i], &arrY[i]);
+            }
+
+            get_rectangle_input(arrX[4], arrY[4]);
         }
         else if (choice == 3) {
             break;

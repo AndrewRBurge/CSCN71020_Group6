@@ -3,12 +3,11 @@
   "WorkspaceRootPath": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|solutionrelative:source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2D6947A1-A940-4D46-8AF3-CA2AD1A45AA3}|..\\UnitTestsfor trigangle \u0026Rectangle\\UnitTestsfor trigangle \u0026Rectangle.vcxproj|C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\UnitTestsfor trigangle \u0026Rectangle\\UnitTestsfor trigangle \u0026Rectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\trig.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|solutionrelative:trig.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A3E7CCD-8C9D-41EB-950C-8EA3637446AE}|Group Project.vcxproj|solutionrelative:source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +17,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "trig.c",
-              "DocumentMoniker": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\trig.c",
-              "RelativeDocumentMoniker": "trig.c",
-              "ToolTip": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\trig.c",
-              "RelativeToolTip": "trig.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-13T16:38:27.524Z"
+              "DocumentIndex": 0,
+              "Title": "UnitTestsfor trigangle \u0026Rectangle.cpp",
+              "DocumentMoniker": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\UnitTestsfor trigangle \u0026Rectangle\\UnitTestsfor trigangle \u0026Rectangle.cpp",
+              "RelativeDocumentMoniker": "..\\UnitTestsfor trigangle \u0026Rectangle\\UnitTestsfor trigangle \u0026Rectangle.cpp",
+              "ToolTip": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\UnitTestsfor trigangle \u0026Rectangle\\UnitTestsfor trigangle \u0026Rectangle.cpp",
+              "RelativeToolTip": "..\\UnitTestsfor trigangle \u0026Rectangle\\UnitTestsfor trigangle \u0026Rectangle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-13T17:10:36.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "source.c",
               "DocumentMoniker": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c",
               "RelativeDocumentMoniker": "source.c",
               "ToolTip": "C:\\ConProgramming\\Gitpractice\\CSCN71020_A1-main\\CSCN71020_Group6\\source.c",
               "RelativeToolTip": "source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-06T20:14:32.375Z",
               "EditorCaption": ""
